@@ -1,7 +1,7 @@
 .hero-section {
-  padding-top: 50px;
+  padding-top: 60px;
   position: relative;
-  height: 550px;
+  height: 500px;
 }
 
 .hero-video {
@@ -106,7 +106,7 @@
 }
 .stats {
   display: flex;
-  gap: 3rem; /* space between stats */
+  gap: 3rem; 
   margin-top: 3rem;
 }
 
@@ -118,25 +118,25 @@
 }
 
 .stats-number {
-  font-size: 2.5rem;      /* large bold number */
+  font-size: 2.5rem;     
   font-weight: 700;
   line-height: 1.1;
 }
 
 .stats-label {
-  font-size: 1rem;        /* smaller label */
+  font-size: 1rem;       
   font-weight: 500;
   margin-top: 0.25rem;
-  color: #e0f2fe;         /* lighter blueish text */
+  color: #e0f2fe;        
 }
 
 /* Right form container */
 .hero-right {
   background: #ffffff;
-  padding: 1.5rem;                 /* slightly squeezed */
+  padding: 1.5rem;                
   border-radius: 22px;
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
-  max-width: 500px;                /* wider form */
+  max-width: 500px;               
   margin-left: auto;
 }
 
@@ -144,25 +144,25 @@
 .hero-right form {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;                    /* tighter spacing */
+  gap: 0.75rem;                   
 }
 
 /* Inputs & selects */
 .hero-right input,
 .hero-right select {
   width: 100%;
-  height: 40px;                    /* reduced height */
+  height: 40px;                   
   padding: 0 0.9rem;
   border-radius: 16px;
-  border: 1.5px solid #cfd4d9;     /* grey borders */
+  border: 1.5px solid #cfd4d9;    
   font-size: 0.9rem;
-  color: #6b7280;                  /* grey text */
+  color: #6b7280;                
   box-sizing: border-box;
 }
 
 /* Placeholder text */
 .hero-right input::placeholder {
-  color: #9ca3af;                  /* soft grey placeholder */
+  color: #9ca3af;                  
 }
 
 /* Focus state */

@@ -1,18 +1,16 @@
 .impact-wrapper {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 40px 20px;
   text-align: center;
   box-sizing: border-box;
-    border-radius: 12px; 
-    border: 1px solid #e0e0e0;
-    padding: 30px 20px; 
-    width: 94%; 
-    max-width: 1200px; 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    margin: 0 auto; 
-     margin-top: 10%;
-}
+  border-radius: 12px; 
+  border: 1px solid #e0e0e0;
+  padding: 5px 20px; 
+  margin-top: 40px;
+  width: 94%; 
+  max-width: 1200px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+   }
 .impact-heading {
   font-size: 2rem;
   font-weight: 700;

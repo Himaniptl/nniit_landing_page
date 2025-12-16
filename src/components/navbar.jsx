@@ -20,14 +20,14 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="container">
-        {/* Logo */}
+       
         <div className="logo">
           <img src={Logo} alt="NNIIT" />
         </div>
 
-        {/* Center Links */}
+      
         <div className="nav-links">
-          {/* Courses Mega Dropdown */}
+       
           <div className="dropdown" ref={dropdownRef}>
             <button
               className="dropdown-btn"

@@ -7,7 +7,7 @@ const impactData = [
     value: "12+ Countries",
     description:
       "Empowering learners worldwide with personalized, flexible, and high-impact live classes.",
-    color: "#D9B3FF", // purple
+    color: "#D9B3FF", 
   },
   {
     title: "Live Learning Hours",
@@ -21,7 +21,7 @@ const impactData = [
     value: "3M+ Doubts Answered",
     description:
       "Ensuring clarity and deeper understanding by resolving every student's queries instantly through our app.",
-    color: "#A9F5D0", // green
+    color: "#A9F5D0", 
   },
 ];
 

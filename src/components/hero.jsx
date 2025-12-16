@@ -24,19 +24,19 @@ export default function Hero() {
 
   return (
     <section className="hero-section">
-      {/* Background video */}
+      
      <video className="hero-video" autoPlay muted loop playsInline>
   <source src={bgVideo} type="video/mp4" />
   Your browser does not support the video tag.
 </video>
 
 
-      {/* Background shapes */}
+     
       <div className="background-shape bg-top-left"></div>
       <div className="background-shape bg-bottom-right"></div>
 
       <div className="hero-container">
-        {/* Left Content */}
+       
         <div className="hero-left">
           <h1>Revolutionizing Education with AI</h1>
           <p>Learn <strong>your</strong> way with a fully customized curriculum</p>
@@ -63,7 +63,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right Form */}
+        
         <div className="hero-right">
           <form onSubmit={handleSubmit}>
             <input

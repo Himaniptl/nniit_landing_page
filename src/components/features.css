@@ -1,15 +1,15 @@
-/* OUTER WRAPPER – controls screen consistency */
+
 .features-wrapper {
   width: 100%;
-  padding: 60px 20px;          /* equal left/right spacing */
+  padding: 40px 20px;          
   background: #ffffff;
   box-sizing: border-box;
+  margin-left: 60px;
 }
 
-/* INNER CONTAINER – fixed readable width */
+
 .features-container {
-  max-width: 1100px;           /* slight increase for balance */
-  margin: 0 auto;              /* centers container */
+  max-width: 1100px;          
   background: #eef7fc;
   border-radius: 22px;
   padding: 40px 30px;
@@ -28,7 +28,7 @@
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 32px;                   /* consistent spacing */
+  gap: 32px;               
   width: 100%;
 }
 

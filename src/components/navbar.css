@@ -173,21 +173,21 @@
 }
 
 .btn.login {
-  background-color: #fff;       /* White background */
-  color: #00bcd4;              /* Blue text */
-  border: 2px solid #00bcd4;   /* Blue border */
+  background-color: #fff;       
+  color: #00bcd4;             
+  border: 2px solid #00bcd4;   
 }
 
 .btn.login:hover {
-  background-color: #00bcd4;   /* Blue background on hover */
-  color: #fff;                 /* White text on hover */
+  background-color: #00bcd4;   
+  color: #fff;                 
 }
 
 
 /* Each section */
 .mega-section {
-  max-width: 900px;          /* 👈 allow text to spread */
-  margin: 0 auto 32px auto;
+  max-width: 900px;          
+    margin: 0 auto 32px auto;
 }
 
 /* Headings */
@@ -212,7 +212,7 @@
 .mega-dropdown {
   position: absolute;
   top: 100%;
-  left: 40px;                 /* 👈 anchor to Courses */
+  left: 40px;                 
   width: 500px;
   background: #fff;
   padding: 50px 60px;
