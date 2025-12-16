@@ -1,0 +1,211 @@
+.hero-section {
+  padding-top: 50px;
+  position: relative;
+  height: 550px;
+}
+
+.hero-video {
+   padding-top: 0.5%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  z-index: 1; 
+  backdrop-filter: blur(5px);   
+}
+
+
+.background-shape {
+  position: absolute;
+  border-radius: 50%;
+  mix-blend-mode: multiply;
+  filter: blur(3rem);
+  opacity: 0.2;
+}
+
+.bg-top-left {
+  top: 0;
+  left: 0;
+  width: 24rem;
+  height: 24rem;
+}
+
+.bg-bottom-right {
+  bottom: 0;
+  right: 0;
+  width: 24rem;
+  height: 24rem;
+}
+
+/* Container */
+.hero-container {
+  position: relative;
+  z-index: 10;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .hero-container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
+
+/* Left Content */
+.hero-left h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.hero-left p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cta-buttons button {
+  background-color: #ffffff;
+  color: #06b6d4;
+  font-weight: 600;
+  border-radius: 16%;
+  padding: 0.6rem 2.2rem;
+  border: none;
+  cursor: pointer;
+
+  /* smooth feel */
+  box-shadow: 0 6px 16px rgba(6, 182, 212, 0.25);
+  transition: 
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.cta-buttons button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(6, 182, 212, 0.35);
+  background-color: #f0fbfd;
+}
+
+.cta-buttons button:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 12px rgba(6, 182, 212, 0.3);
+}
+.stats {
+  display: flex;
+  gap: 3rem; /* space between stats */
+  margin-top: 3rem;
+}
+
+.stats > div {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stats-number {
+  font-size: 2.5rem;      /* large bold number */
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.stats-label {
+  font-size: 1rem;        /* smaller label */
+  font-weight: 500;
+  margin-top: 0.25rem;
+  color: #e0f2fe;         /* lighter blueish text */
+}
+
+/* Right form container */
+.hero-right {
+  background: #ffffff;
+  padding: 1.5rem;                 /* slightly squeezed */
+  border-radius: 22px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+  max-width: 500px;                /* wider form */
+  margin-left: auto;
+}
+
+/* Form layout */
+.hero-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;                    /* tighter spacing */
+}
+
+/* Inputs & selects */
+.hero-right input,
+.hero-right select {
+  width: 100%;
+  height: 40px;                    /* reduced height */
+  padding: 0 0.9rem;
+  border-radius: 16px;
+  border: 1.5px solid #cfd4d9;     /* grey borders */
+  font-size: 0.9rem;
+  color: #6b7280;                  /* grey text */
+  box-sizing: border-box;
+}
+
+/* Placeholder text */
+.hero-right input::placeholder {
+  color: #9ca3af;                  /* soft grey placeholder */
+}
+
+/* Focus state */
+.hero-right input:focus,
+.hero-right select:focus {
+  outline: none;
+  border-color: #1e9bb8;
+}
+
+/* Phone row */
+.phone-row {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.phone-row select {
+  width: 26%;
+}
+
+.phone-row input {
+  width: 74%;
+}
+
+/* Grid rows */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+}
+
+/* Buttons */
+.hero-right button {
+  height: 40px;
+  background-color: #1e9bb8;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.hero-right button:hover {
+  background-color: #168aa3;
+  transform: translateY(-1px);
+}

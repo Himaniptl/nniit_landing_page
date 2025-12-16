@@ -1,0 +1,222 @@
+/* =========================
+   Navbar Container
+========================= */
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  font-family: 'Arial', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+
+  /* Optional shadow for better separation */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+/* =========================
+   Logo
+========================= */
+.logo img {
+  height: 44px;
+  transition: transform 0.3s;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   Navigation Links
+========================= */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #333;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s;
+}
+
+.dropdown:hover .icon {
+  transform: rotate(180deg);
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 8px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  width: 180px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s;
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #333;
+  transition: background 0.2s;
+}
+
+.dropdown-content a:hover {
+  background-color: #f5f5f5;
+}
+
+.contact .phone {
+  font-size: 12px;
+  color: #888;
+  margin-left: 4px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  padding: 8px 22px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.btn.demo {
+  background-color: #e74c3c;
+}
+
+.btn.demo:hover {
+  background-color: #c0392b;
+}
+
+.btn.login {
+  background-color: #00bcd4;
+}
+
+.btn.login:hover {
+  background-color: #0097a7;
+}
+
+.btn.login {
+  background-color: #fff;       /* White background */
+  color: #00bcd4;              /* Blue text */
+  border: 2px solid #00bcd4;   /* Blue border */
+}
+
+.btn.login:hover {
+  background-color: #00bcd4;   /* Blue background on hover */
+  color: #fff;                 /* White text on hover */
+}
+
+
+/* Each section */
+.mega-section {
+  max-width: 900px;          /* 👈 allow text to spread */
+  margin: 0 auto 32px auto;
+}
+
+/* Headings */
+.mega-section h4 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* Text */
+.mega-section p {
+  font-size: 15px;
+  line-height: 1.7;
+  white-space: normal;  
+}
+
+.courses-item {
+  position: relative;
+}
+
+/* Mega dropdown */
+.mega-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 40px;                 /* 👈 anchor to Courses */
+  width: 500px;
+  background: #fff;
+  padding: 50px 60px;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+}

@@ -1,0 +1,59 @@
+/* OUTER WRAPPER – controls screen consistency */
+.features-wrapper {
+  width: 100%;
+  padding: 60px 20px;          /* equal left/right spacing */
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+/* INNER CONTAINER – fixed readable width */
+.features-container {
+  max-width: 1100px;           /* slight increase for balance */
+  margin: 0 auto;              /* centers container */
+  background: #eef7fc;
+  border-radius: 22px;
+  padding: 40px 30px;
+  box-sizing: border-box;
+}
+
+/* TITLE */
+.features-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 32px;                   /* consistent spacing */
+  width: 100%;
+}
+
+/* CARD */
+.feature-card {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ICON */
+.feature-icon {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 12px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* TEXT */
+.feature-card p {
+  margin: 0;
+}
+

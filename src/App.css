@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Make the app container take full viewport height */
+.app-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh; /* full height */
 }
 
-.App-link {
-  color: #61dafb;
+/* Main content grows and pushes footer down */
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9; /* optional page background */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Prevent horizontal scroll issues */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+/* Main app wrapper */
+#root {
+  width: 100%;
+}
+
+/* Reusable content container */
+.container {
+  width: 100%;
+  max-width: 1200px;   /* consistent desktop width */
+  margin: 0 auto;      /* center horizontally */
+  padding: 0 20px;     /* safe spacing on sides */
+}
+
+/* Make all images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Sections spacing consistency */
+section {
+  width: 100%;
+  padding: 60px 0;
 }

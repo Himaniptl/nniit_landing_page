@@ -1,0 +1,19 @@
+.association-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 40px 20px;
+}
+
+.association-text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #222;
+}
+
+.association-logo {
+  height: 120px;
+  max-width: 220px;
+  object-fit: contain;
+}

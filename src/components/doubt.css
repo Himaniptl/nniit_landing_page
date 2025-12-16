@@ -1,0 +1,90 @@
+.doubt-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 12px; 
+    border: 1px solid #e0e0e0;
+    padding: 30px 20px; 
+    width: 94%; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin: 0 auto; 
+     margin-top: 10%;
+}
+
+.doubt-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 25px; 
+    flex-wrap: wrap;
+    margin-left: 200px;
+   
+}
+
+.doubt-left, .doubt-center, .doubt-right {
+    flex: 1;  
+}
+
+.doubt-left h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 1.3;
+    padding-left: 20%;
+}
+
+.blue {
+    color: #007bff; 
+}
+
+.red {
+    color: #ff0000; 
+}
+
+.subtitle {
+    font-size: 0.95rem;
+    padding-left: 20%;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.demo-btn {
+    background-color: #e63946; 
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 20%;
+}
+
+.demo-btn:hover {
+    background-color: #d62828;
+}
+
+/* CENTER SECTION */
+.doubt-center {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.doubt-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* RIGHT SECTION */
+.doubt-right {
+    flex: 1;
+    min-width: 250px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #555;
+    margin-right: 15%;
+}
