@@ -1,5 +1,6 @@
 import React from "react";
 import "./faq.css";
+//updATED
 
 const faqs = [
   {
