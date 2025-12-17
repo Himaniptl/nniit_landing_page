@@ -1,21 +1,31 @@
 import { useState, useEffect, useRef } from "react";
 import { ChevronDown } from "lucide-react";
 import "./navbar.css";
-import Logo from '../NNIIT_Landing_Page_Assets/logo.png';
+import Logo from "../NNIIT_Landing_Page_Assets/logo.png";
+import DemoModal from "../components/DemoModal";
 
 export default function Navbar() {
   const [isCoursesOpen, setIsCoursesOpen] = useState(false);
+  const [openDemo, setOpenDemo] = useState(false);
   const dropdownRef = useRef(null);
 
   useEffect(() => {
     function handleClickOutside(event) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target)
+      ) {
         setIsCoursesOpen(false);
       }
     }
     document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    return () =>
+      document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = openDemo ? "hidden" : "auto";
+  }, [openDemo]);
 
   return (
     <nav className="navbar">
@@ -25,9 +35,7 @@ export default function Navbar() {
           <img src={Logo} alt="NNIIT" />
         </div>
 
-      
         <div className="nav-links">
-       
           <div className="dropdown" ref={dropdownRef}>
             <button
               className="dropdown-btn"
@@ -88,7 +96,10 @@ export default function Navbar() {
             )}
           </div>
 
-          <a href="#why-nniit" className="nav-item">Why NNIIT</a>
+          <a href="#why-nniit" className="nav-item">
+            Why NNIIT
+          </a>
+
           <a href="#contact" className="nav-item contact">
             Contact us <span className="phone">+91-9110763704</span>
           </a>
@@ -96,10 +107,21 @@ export default function Navbar() {
 
         {/* Right Buttons */}
         <div className="nav-buttons">
-          <button className="btn demo">Book a free demo</button>
+          <button
+            className="btn demo"
+            onClick={() => setOpenDemo(true)}
+          >
+            Book a free demo
+          </button>
+
           <button className="btn login">Login / Sign up</button>
         </div>
       </div>
+
+      <DemoModal
+        open={openDemo}
+        onClose={() => setOpenDemo(false)}
+      />
     </nav>
   );
 }

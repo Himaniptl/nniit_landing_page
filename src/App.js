@@ -9,23 +9,21 @@ import ImpactScale from "./components/ImpactScale";
 import WallOfLove from "./components/wallOfLove";
 import FAQ from "./components/faq";
 import Syllabus from "./components/syllabus";
+import ExploreOfferings from "./components/ExploreOfferings";
 function App() {
   return (
     <div className="App">
       
-      <Navbar />
-      <Hero />
-      <ImpactScale/>
-      <Features />
-      <Association />
-      <Doubt />
+      <Navbar /><Hero />  <ImpactScale/>
+       <Features />
+       <Association />
+          <ExploreOfferings />
+          <Doubt />
       <WallOfLove />
       <FAQ />
       <Syllabus/>
       <Footer/>
-      
-    
-
+       
     </div>
   );
 }

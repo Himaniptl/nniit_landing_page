@@ -14,7 +14,7 @@ const impactData = [
     value: "3.1+ Crore Hours",
     description:
       "Delivering extensive, high-quality, and interactive one-on-one learning experiences across the globe.",
-    color: "#FFC59D", // orange
+    color: "#FFC59D", 
   },
   {
     title: "Doubts Resolved",
