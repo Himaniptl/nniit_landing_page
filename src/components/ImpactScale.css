@@ -1,50 +1,54 @@
-.impact-wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
+.impact-wrapper { 
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 110px 20px; 
   text-align: center;
   box-sizing: border-box;
-  border-radius: 12px; 
+  border-radius: 16px; 
   border: 1px solid #e0e0e0;
-  padding: 5px 20px; 
-  margin-top: 40px;
-  width: 94%; 
-  max-width: 1200px; 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-   }
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  background-color: #f9f9f9; 
+}
+
 .impact-heading {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
+
 .impact-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
 }
+
 .impact-card {
-  flex: 1;
-  min-width: 250px;
+  flex: 1 1 300px; 
   background-color: #fff;
-  padding: 20px 15px;
+  padding: 25px 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   text-align: center;
 }
+
 .impact-title {
   display: inline-block;
-  padding: 5px 15px;
+  padding: 6px 18px;
   border-radius: 20px;
   font-weight: 500;
   margin-bottom: 15px;
   font-size: 0.9rem;
 }
+
 .impact-value {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 700;
   margin-bottom: 10px;
 }
+
 .impact-description {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: #555;
+  line-height: 1.5;
 }

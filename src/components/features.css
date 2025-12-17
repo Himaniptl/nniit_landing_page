@@ -1,20 +1,23 @@
 .features-wrapper {
   width: 100%;
-  padding: 30px 20px;
+  padding: 20px; 
   background: #ffffff;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center; 
+  margin-top: 40px; 
 }
 
 .features-container {
-  max-width: 1100px;
-  margin: 0 auto;            
-  background: #eef7fc;
+  max-width: 1100px; 
+  width: 100%;
+  background: #c9e1ee;
   border-radius: 22px;
   padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
   box-sizing: border-box;
 }
 
-/* TITLE */
 .features-title {
   text-align: center;
   font-size: 28px;
@@ -22,7 +25,6 @@
   margin-bottom: 40px;
 }
 
-/* GRID */
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));

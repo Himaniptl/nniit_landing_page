@@ -24,6 +24,7 @@ export default function Hero() {
 
   return (
     <section className="hero-section">
+      <div className="container">
       
      <video className="hero-video" autoPlay muted loop playsInline>
   <source src={bgVideo} type="video/mp4" />
@@ -118,6 +119,7 @@ export default function Hero() {
             <button type="submit">Connect With Our Expert</button>
           </form>
         </div>
+      </div>
       </div>
     </section>
   );

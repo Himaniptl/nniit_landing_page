@@ -1,54 +1,26 @@
-/* Make the app container take full viewport height */
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* full height */
+:root {
+  --font-primary: 'Inter', system-ui, sans-serif;
+  --text-base: 16px;
+  --text-lg: 18px;
+  --text-xl: 24px;
+  --gap-section: 80px;
 }
 
-/* Main content grows and pushes footer down */
-.content {
-  flex: 1;
-  padding: 20px;
-  background-color: #f9f9f9; /* optional page background */
-}
-
-/* Global reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Prevent horizontal scroll issues */
-html,
 body {
-  width: 100%;
-  overflow-x: hidden;
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: #1a1a1a;
 }
 
-/* Main app wrapper */
-#root {
-  width: 100%;
-}
-
-/* Reusable content container */
 .container {
-  width: 100%;
-  max-width: 1200px;   /* consistent desktop width */
-  margin: 0 auto;      /* center horizontally */
-  padding: 0 20px;     /* safe spacing on sides */
-}
-
-/* Make all images responsive */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Sections spacing consistency */
-section {
-  width: 100%;
-  padding: 60px 0;
+  max-width: 1200px;
+  margin: 0 auto;      
+  padding: 0 20px;     
 }

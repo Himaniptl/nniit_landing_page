@@ -1,6 +1,4 @@
-/* =========================
-   Navbar Container
-========================= */
+
 .navbar {
   background-color: #fff;
   border-bottom: 1px solid #e0e0e0;
@@ -10,13 +8,10 @@
   left: 0;
   width: 100%;
   z-index: 999;
-
-  /* Optional shadow for better separation */
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
-
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
@@ -24,10 +19,6 @@
   justify-content: space-between;
   height: 80px;
 }
-
-/* =========================
-   Logo
-========================= */
 .logo img {
   height: 44px;
   transition: transform 0.3s;
@@ -37,9 +28,6 @@
   transform: scale(1.05);
 }
 
-/* =========================
-   Navigation Links
-========================= */
 .nav-links {
   display: flex;
   align-items: center;

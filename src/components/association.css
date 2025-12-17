@@ -5,13 +5,11 @@
   gap: 24px;
   
 }
-
 .association-text {
   font-size: 1.6rem;
   font-weight: 500;
   color: #222;
 }
-
 .association-logo {
   height: 120px;
   max-width: 220px;

@@ -10,15 +10,19 @@ import WallOfLove from "./components/wallOfLove";
 import FAQ from "./components/faq";
 import Syllabus from "./components/syllabus";
 import ExploreOfferings from "./components/ExploreOfferings";
+import './App.css';
+
 function App() {
   return (
     <div className="App">
       
-      <Navbar /><Hero />  <ImpactScale/>
-       <Features />
-       <Association />
-          <ExploreOfferings />
-          <Doubt />
+      <Navbar />
+      <Hero />  
+      <ImpactScale/>
+      <Features />
+      <Association />
+      <ExploreOfferings />
+      <Doubt />
       <WallOfLove />
       <FAQ />
       <Syllabus/>

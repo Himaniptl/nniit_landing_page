@@ -28,6 +28,7 @@ const impactData = [
 const ImpactScale = () => {
   return (
     <div className="impact-wrapper">
+      <div className="container">
       <h2 className="impact-heading">Impact At Scale</h2>
       <div className="impact-cards">
         {impactData.map((item, index) => (
@@ -42,6 +43,7 @@ const ImpactScale = () => {
             <p className="impact-description">{item.description}</p>
           </div>
         ))}
+      </div>
       </div>
     </div>
   );
