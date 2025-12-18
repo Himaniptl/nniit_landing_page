@@ -1,3 +1,4 @@
+
 import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import Footer from "./components/footer";
@@ -10,24 +11,26 @@ import WallOfLove from "./components/wallOfLove";
 import FAQ from "./components/faq";
 import Syllabus from "./components/syllabus";
 import ExploreOfferings from "./components/ExploreOfferings";
+import WelcomeMessage from "./components/WelcomeMessage";
 import './App.css';
+import './index.css';
 
 function App() {
   return (
     <div className="App">
-      
+      <WelcomeMessage />
       <Navbar />
-      <Hero />  
-      <ImpactScale/>
+      <Hero />
+      <ImpactScale />
       <Features />
       <Association />
       <ExploreOfferings />
       <Doubt />
       <WallOfLove />
       <FAQ />
-      <Syllabus/>
-      <Footer/>
-       
+      <Syllabus />
+      <Footer />
+
     </div>
   );
 }

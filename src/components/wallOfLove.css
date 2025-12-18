@@ -2,7 +2,7 @@
   max-width: 1100px;
   margin: 60px auto;
   padding: 0 20px;
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; -- REMOVED */
 }
 
 .wall-wrapper h2 {

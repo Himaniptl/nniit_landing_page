@@ -35,8 +35,6 @@ const Features = () => {
                 <img
                   src={item.img}
                   alt={item.title}
-                  width={70}
-                  height={70}
                 />
               </div>
               <p>{item.title}</p>

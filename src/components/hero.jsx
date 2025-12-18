@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import './hero.css';
-import bgVideo from '../NNIIT_Landing_Page_Assets/bg_video.mp4';
+import mainpgpic from "../NNIIT_Landing_Page_Assets/mainbgpic.jpg"
 
 export default function Hero() {
   const [formData, setFormData] = useState({
@@ -24,20 +24,20 @@ export default function Hero() {
 
   return (
     <section className="hero-section">
-      <div className="container">
-      
-     <video className="hero-video" autoPlay muted loop playsInline>
-  <source src={bgVideo} type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
+
+      <img
+        className="hero-video"
+        src={mainpgpic}
+        alt="Hero Background"
+      />
 
 
-     
+
       <div className="background-shape bg-top-left"></div>
       <div className="background-shape bg-bottom-right"></div>
 
       <div className="hero-container">
-       
+
         <div className="hero-left">
           <h1>Revolutionizing Education with AI</h1>
           <p>Learn <strong>your</strong> way with a fully customized curriculum</p>
@@ -64,7 +64,7 @@ export default function Hero() {
           </div>
         </div>
 
-        
+
         <div className="hero-right">
           <form onSubmit={handleSubmit}>
             <input
@@ -119,7 +119,6 @@ export default function Hero() {
             <button type="submit">Connect With Our Expert</button>
           </form>
         </div>
-      </div>
       </div>
     </section>
   );

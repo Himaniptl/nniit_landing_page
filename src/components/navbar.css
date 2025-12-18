@@ -1,8 +1,7 @@
-
 .navbar {
   background-color: #fff;
   border-bottom: 1px solid #e0e0e0;
-  font-family: 'Arial', sans-serif;
+  /* font-family: 'Arial', sans-serif; -- REMOVED */
   position: fixed;
   top: 0;
   left: 0;
@@ -10,6 +9,7 @@
   z-index: 999;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
+
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -19,6 +19,7 @@
   justify-content: space-between;
   height: 80px;
 }
+
 .logo img {
   height: 44px;
   transition: transform 0.3s;
@@ -96,7 +97,7 @@
   background-color: #fff;
   border: 1px solid #e0e0e0;
   border-radius: 6px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   width: 180px;
   opacity: 0;
   visibility: hidden;
@@ -161,21 +162,21 @@
 }
 
 .btn.login {
-  background-color: #fff;       
-  color: #00bcd4;             
-  border: 2px solid #00bcd4;   
+  background-color: #fff;
+  color: #00bcd4;
+  border: 2px solid #00bcd4;
 }
 
 .btn.login:hover {
-  background-color: #00bcd4;   
-  color: #fff;                 
+  background-color: #00bcd4;
+  color: #fff;
 }
 
 
 /* Each section */
 .mega-section {
-  max-width: 900px;          
-    margin: 0 auto 32px auto;
+  max-width: 900px;
+  margin: 0 auto 32px auto;
 }
 
 /* Headings */
@@ -189,7 +190,7 @@
 .mega-section p {
   font-size: 15px;
   line-height: 1.7;
-  white-space: normal;  
+  white-space: normal;
 }
 
 .courses-item {
@@ -200,11 +201,161 @@
 .mega-dropdown {
   position: absolute;
   top: 100%;
-  left: 40px;                 
+  left: 40px;
   width: 500px;
   background: #fff;
   padding: 50px 60px;
   border-radius: 16px;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
   z-index: 1000;
+}
+
+/* Mobile Menu Button - Hidden on Desktop */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  padding: 5px;
+}
+
+/* Mobile Menu Overlay - Hidden on Desktop */
+.mobile-menu {
+  display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .mega-section {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .navbar {
+    height: auto;
+    min-height: 70px;
+    /* Reduced specific height for mobile if needed */
+  }
+
+  .container {
+    height: 70px;
+    /* Match navbar min-height */
+  }
+
+  /* Mobile Menu Container */
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    top: 70px;
+    /* Below navbar */
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: #fff;
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    padding-bottom: 40px;
+    border-top: 1px solid #eee;
+  }
+
+  .mobile-menu.open {
+    transform: translateX(0);
+  }
+
+  .mobile-nav-links {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mobile-nav-item {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  /* Mobile Dropdown */
+  .mobile-dropdown-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    padding: 10px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .icon.rotate {
+    transform: rotate(180deg);
+  }
+
+  .mobile-dropdown-content {
+    display: none;
+    padding: 10px 0;
+    background-color: #f9f9f9;
+    margin: 0 -20px;
+    /* Stretch to edges */
+    padding: 20px;
+  }
+
+  .mobile-dropdown-content.show {
+    display: block;
+  }
+
+  .mobile-section {
+    margin-bottom: 24px;
+  }
+
+  .mobile-section h4 {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .mobile-links-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .mobile-links-grid a {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .mobile-nav-buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn.full-width {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
 }

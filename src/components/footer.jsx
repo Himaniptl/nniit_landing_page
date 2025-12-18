@@ -9,20 +9,20 @@ export default function Footer() {
         <div className="footer-section">
           <h4>Courses</h4>
           <p>
-            <a href="/courses/cbse">CBSE Tuitions</a> |{" "}
-            <a href="/courses/icse">ICSE Tuitions</a> |{" "}
-            <a href="/courses/jee">JEE (Mains & Advanced)</a> |{" "}
+            <a href="/courses/cbse">CBSE Tuitions</a>
+            <a href="/courses/icse">ICSE Tuitions</a>
+            <a href="/courses/jee">JEE (Mains & Advanced)</a>
             <a href="/courses/neet">NEET</a>
           </p>
         </div>
         <div className="footer-section">
           <h4>Company</h4>
           <p>
-            <a href="/about">About us</a> |{" "}
-            <a href="/contact">Contact Us</a> |{" "}
-            <a href="/blog">NNIIT Blog</a> |{" "}
-            <a href="/why-nniit">Why NNIIT</a> |{" "}
-            <a href="/results">Our results</a> |{" "}
+            <a href="/about">About us</a>
+            <a href="/contact">Contact Us</a>
+            <a href="/blog">NNIIT Blog</a>
+            <a href="/why-nniit">Why NNIIT</a>
+            <a href="/results">Our results</a>
             <a href="/careers">Careers</a>
           </p>
         </div>

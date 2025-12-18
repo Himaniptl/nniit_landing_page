@@ -15,3 +15,46 @@
   max-width: 220px;
   object-fit: contain;
 }
+
+@media (max-width: 767px) {
+  .association-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .association-text {
+    font-size: 1.2rem;
+  }
+
+  .association-logo {
+    height: 80px;
+    max-width: 160px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .association-wrapper {
+    gap: 20px;
+  }
+
+  .association-text {
+    font-size: 1.4rem;
+  }
+
+  .association-logo {
+    height: 100px;
+    max-width: 190px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .association-text {
+    font-size: 1.7rem;
+  }
+
+  .association-logo {
+    height: 130px;
+    max-width: 240px;
+  }
+}
